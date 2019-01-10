@@ -7,9 +7,8 @@ class Anagram
   end
   
   def match(array)
-    sorted = @word.split
-    sorted.sort
-    joined = sorted.join
+    sorted = @word.split("").sort.join
+    
     puts sorted
     sorted_array = array.collect do |word|
       word.split.sort.join
