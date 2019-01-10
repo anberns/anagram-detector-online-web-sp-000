@@ -11,6 +11,7 @@ class Anagram
     sorted_array = array.collect do |word|
       word.split("").sort.join
     end
+    puts sorted_array
     ana_indexes = []
     sorted_array.each_with_index do |word, index|
       ana_indexes << word if word == sorted
